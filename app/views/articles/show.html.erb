@@ -1,0 +1,12 @@
+<h1><%= @article.title %></h1>
+<br>
+<p><%= @article.description %></p>
+<h4>Price:</h4>
+<% if @article.price %>
+  <p><%= @article.price %></p>
+<% else %>
+  <p>N/A</p>
+<% end %>
+
+<h4>Contact:</h4>
+<p><%= @article.email %></p>
