@@ -1,0 +1,23 @@
+<h2>Edit article:</h2>
+
+<%= form_for :article, url: category_article_path(@category, @article), method: :put do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %><br>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
