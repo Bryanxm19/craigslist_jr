@@ -2,6 +2,7 @@
 
 <%= render @category.articles %>
 
+<%= render 'articles/form' %>
 <%= link_to 'Back', categories_path %>
 <%= link_to 'Edit', edit_category_path(@category) %>
 <%= link_to 'Delete', category_path(@category), method: :delete %>
