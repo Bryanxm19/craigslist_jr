@@ -2,7 +2,7 @@
 
 <ul>
   <% @categories.each do |category| %>
-    <li><%= link_to category.description, category_path(category.id) %></li>
+    <li><%= link_to category.description, category_path(category) %></li>
   <% end %>
 </ul>
 
